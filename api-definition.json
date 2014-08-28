@@ -1,0 +1,24 @@
+{
+  "service": {
+    "findlocation": "http://gws2.maps.yahoo.com/"
+  },
+  "endpoints": {
+    "woeid2loc": {
+      "route": "FindLocation?woeid='12797535'&locale=en-US&appid=search&count=1",
+      "method": "get",
+      "_data": {
+        "woeid": 12797535,
+        "locale": "en-US",
+        "appid": "search",
+        "count": 1
+      }
+    }
+  },
+  "options": {
+    "minSamples": 1000,
+    "runMode": "parallel",
+    "maxConcurrentRequests": 20,
+    "debug": true,
+    "stopOnError": false
+  }
+}
